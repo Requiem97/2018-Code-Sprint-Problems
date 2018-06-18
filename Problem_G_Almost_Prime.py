@@ -7,11 +7,13 @@ def is_prime(num):
         if num % i == 0:
             return False
     return True
+
 def get_factors(num):
     factors = []
     for i in range(2, num + 1):
         if num % i == 0: factors.append(i)
     return factors
+    
 def almost_prime(num_list):
     count = 0
     if len(num_list) == 1:
